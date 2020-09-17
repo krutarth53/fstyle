@@ -14,7 +14,7 @@ from PIL import Image
 import matplotlib.pyplot as plt
 import torch
 import torch.optim as optim
-from pip in import models
+from pip import models
 from torchvision import transforms as tf
 import torch.nn.functional as F
 from tqdm import tqdm_notebook
