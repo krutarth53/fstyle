@@ -67,7 +67,7 @@ def tensor_to_image(tensor):
 
 ImageFile.LOAD_TRUNCATED_IMAGES = False
 
-content_img = Image.open("ex.jpg").convert('RGB')
+content_img = Image.open("ex.JPG").convert('RGB')
 style_img   = Image.open("2.jpg").convert('RGB')
 
 content_img = transformation(content_img).to(device)
