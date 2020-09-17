@@ -17,7 +17,6 @@ import torch.optim as optim
 import torchvision.models as models
 from torchvision import transforms as tf
 import torch.nn.functional as F
-from tqdm import tqdm_notebook
 from PIL import ImageFile
 
 """## Loding VGG19 from Pytorch"""
@@ -133,7 +132,10 @@ plt.imshow(tensor_to_image(target))
 
 """## Performimg Style Transfer"""
 
-for i in tqdm_notebook(range(1, 20)):
+for i in range(1, 20):
+    
+    if i%500 == 0:
+        print(i)
     
     target_features = apply_model_and_extract_features(target, vgg)
 
