@@ -17,7 +17,7 @@ import torch.optim as optim
 import torchvision.models as models
 from torchvision import transforms as tf
 import torch.nn.functional as F
-from tqdm import tqdm_notebook
+from tqdm.notebook import tqdm_notebook
 from PIL import ImageFile
 
 """## Loding VGG19 from Pytorch"""
