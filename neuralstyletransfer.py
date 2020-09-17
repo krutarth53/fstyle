@@ -133,7 +133,7 @@ plt.imshow(tensor_to_image(target))
 
 """## Performimg Style Transfer"""
 
-for i in tqdm_notebook(range(1, 5000)):
+for i in tqdm_notebook(range(1, 20)):
     
     target_features = apply_model_and_extract_features(target, vgg)
 
