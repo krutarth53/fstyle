@@ -132,10 +132,8 @@ plt.imshow(tensor_to_image(target))
 
 """## Performimg Style Transfer"""
 
-for i in range(1, 20):
-    
-    if i%500 == 0:
-        print(i)
+for i in range(1, 5000):
+   
     
     target_features = apply_model_and_extract_features(target, vgg)
 
